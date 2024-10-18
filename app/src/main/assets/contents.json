@@ -3,6 +3,93 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "55",
+      "name": "Happy Diwali",
+      "publisher": "GreenGold",
+      "tray_image_file": "happydiwali.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "d1.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d2.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d3.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d4.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d5.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d6.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d7.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d8.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d9.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d10.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d11.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "54",
       "name": "Two Characters",
       "publisher": "GreenGold",
@@ -1147,7 +1234,6 @@
         }
       ]
     },
-
     {
       "identifier": "34",
       "name": "Christmas Wishes",
@@ -1315,7 +1401,6 @@
         }
       ]
     },
-
     {
       "identifier": "32",
       "name": "Diwali",
