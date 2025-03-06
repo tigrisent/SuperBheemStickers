@@ -944,7 +944,7 @@
     "name": "WomensDay",
     "publisher": "GreenGold",
     "tray_image_file": "WomensDay.png",
-    "image_data_version": "1",
+    "image_data_version": "2",
     "animated_sticker_pack": true,
     "stickers": [
       {

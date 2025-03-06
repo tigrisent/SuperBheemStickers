@@ -1,23 +1,28 @@
-apply plugin: 'com.android.application'
+plugins {
+    id 'com.android.application'
+}
 
 android {
-    //the compression of webp file during build causes problem with FileDescriptor in ContentProvider.
-    compileSdkVersion 35
+    namespace 'com.example.samplestickerapp'
+    compileSdk 35
+
     defaultConfig {
         applicationId "com.greengold.stickers.superbheemstickers"
-        minSdkVersion 14
-        targetSdkVersion 35
-        versionCode 176
-        versionName "1.7.6"
+        minSdk 21
+        targetSdk 35
+        versionCode 178
+        versionName "1.7.8"
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        def contentProviderAuthority = applicationId + ".stickercontentprovider"
-        // Creates a placeholder property to use in the manifest.
-        manifestPlaceholders =
-                [contentProviderAuthority: contentProviderAuthority]
-        // Adds a new field for the authority to the BuildConfig class.
-        buildConfigField("String",
-                "CONTENT_PROVIDER_AUTHORITY",
-                "\"${contentProviderAuthority}\"")
+
+        // Define contentProviderAuthority inside the defaultConfig block
+        def contentProviderAuthority = "${applicationId}.stickercontentprovider"
+
+        // Use manifestPlaceholders as a Map directly within defaultConfig
+        manifestPlaceholders = [contentProviderAuthority: contentProviderAuthority]
+
+        // Use buildConfigField to create the BuildConfig field
+        buildConfigField "String", "CONTENT_PROVIDER_AUTHORITY", "\"$contentProviderAuthority\""
     }
 
     buildTypes {
@@ -33,8 +38,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = '1.8'
-        targetCompatibility = '1.8'
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
     packagingOptions {
         jniLibs {
@@ -42,24 +47,13 @@ android {
         }
     }
     androidResources {
-        noCompress 'webp'
+        noCompress += "webp"
     }
-
-    namespace 'com.example.samplestickerapp'
-
-    // Configures multiple APKs based on ABI.
-    // see https://developer.android.com/studio/build/configure-apk-splits#configure-abi-split
-//    splits {
-//        abi {
-//            enable true // Enables building multiple APKs per ABI.
-//            universalApk true // Specifies that we want to also generate a universal APK that includes all ABIs.
-//        }
-//    }
 }
 
 tasks.register('checkDebug') {
     doLast {
-        println("checkDebug")
+        println 'checkDebug'
         if (android.defaultConfig.applicationId.startsWith("com.whatsapp")) {
             throw new GradleException("applicationId in defaultConfig cannot start with com.whatsapp, please change your applicationId in app/build.gradle")
         }
@@ -67,23 +61,22 @@ tasks.register('checkDebug') {
     }
 }
 
-private void checkApplicationIdInDebug() {
+def checkApplicationIdInDebug() {
     Properties properties = new Properties()
-    properties.load(project.rootProject.file('local.properties').newDataInputStream())
-    def ignoreApplicationIdCheck = properties.getProperty('ignoreApplicationIdCheck')
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+    def ignoreApplicationIdCheck = properties.getProperty("ignoreApplicationIdCheck")
     if (ignoreApplicationIdCheck == null) {
         if (android.defaultConfig.applicationId == "com.example.samplestickerapp") {
-          //  throw new GradleException("Your applicationId is currently com.example.samplestickerapp, please change your applicationId to a different string in app/build.gradle in line 10")
+            // throw new GradleException("Your applicationId is currently com.example.samplestickerapp, please change your applicationId to a different string in app/build.gradle in line 10")
         }
     } else {
-        println("application id check ignored")
+        println "application id check ignored"
     }
 }
 
-
 tasks.register('checkRelease') {
     doLast {
-        println("checkRelease")
+        println 'checkRelease'
         if (android.defaultConfig.applicationId.startsWith("com.example")) {
             throw new GradleException("applicationId in defaultConfig cannot start with com.example, please change your applicationId in app/build.gradle")
         }
@@ -91,7 +84,7 @@ tasks.register('checkRelease') {
 }
 
 tasks.configureEach { task ->
-    println(task.name)
+    println task.name
     if (task.name.contains("assembleDebug")) {
         task.dependsOn checkDebug
     }
@@ -100,10 +93,8 @@ tasks.configureEach { task ->
     }
 }
 
-
 dependencies {
-
-    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.7.0'
     implementation 'com.google.android.material:material:1.12.0'
     testImplementation 'junit:junit:4.13.2'
@@ -111,9 +102,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.6.1'
     implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    def fresco_version = '2.6.0'
-    implementation "com.facebook.fresco:fresco:$fresco_version"
-    implementation "com.facebook.fresco:webpsupport:$fresco_version"
-    implementation "com.facebook.fresco:animated-webp:$fresco_version"
-    implementation "com.facebook.fresco:animated-base:$fresco_version"
+    def frescoVersion = "2.6.0"
+    implementation("com.facebook.fresco:fresco:$frescoVersion") {
+        exclude group: 'com.facebook.soloader'
+    }
+    implementation("com.facebook.soloader:soloader:0.10.5")
+    implementation "com.facebook.fresco:webpsupport:$frescoVersion"
+    implementation "com.facebook.fresco:animated-webp:$frescoVersion"
+    implementation "com.facebook.fresco:animated-base:$frescoVersion"
 }
