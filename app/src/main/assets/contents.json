@@ -594,32 +594,32 @@
       "name": "Eid Mubarak",
       "publisher": "GreenGold",
       "tray_image_file": "Eid.png",
-      "image_data_version": "1",
+      "image_data_version": "2",
       "animated_sticker_pack": true,
       "stickers": [
         {
-          "image_file": "r-01.webp",
+          "image_file": "eid-01.webp",
           "emojis": [
             "💻",
             "🌃"
           ]
         },
         {
-          "image_file": "r-02.webp",
+          "image_file": "eid-02.webp",
           "emojis": [
             "💻",
             "🌃"
           ]
         },
         {
-          "image_file": "r-03.webp",
+          "image_file": "eid-03.webp",
           "emojis": [
             "💻",
             "🌃"
           ]
         },
         {
-          "image_file": "r-04.webp",
+          "image_file": "eid-04.webp",
           "emojis": [
             "💻",
             "🌃"
@@ -819,7 +819,7 @@
       "name": "Ram Navami",
       "publisher": "GreenGold",
       "tray_image_file": "RamNavami.png",
-      "image_data_version": "1",
+      "image_data_version": "2",
       "animated_sticker_pack": true,
       "stickers": [
         {
@@ -852,6 +852,27 @@
         },
         {
           "image_file": "n-05.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "n-06.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "n-07.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "n-08.webp",
           "emojis": [
             "💻",
             "🌃"
@@ -936,6 +957,27 @@
             "💻",
             "🌃"
           ]
+        },
+        {
+          "image_file": "u-11.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "u-12.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "u-13.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
         }
       ]
     },
@@ -944,7 +986,7 @@
     "name": "WomensDay",
     "publisher": "GreenGold",
     "tray_image_file": "WomensDay.png",
-    "image_data_version": "2",
+    "image_data_version": "4",
     "animated_sticker_pack": true,
     "stickers": [
       {
@@ -1043,6 +1085,34 @@
         },
         {
           "image_file": "h-05.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "h-06.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "h-07.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "h-08.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "h-09.webp",
           "emojis": [
             "💻",
             "🌃"
