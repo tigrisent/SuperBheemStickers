@@ -632,7 +632,7 @@
       "name": "Happy Vishu",
       "publisher": "GreenGold",
       "tray_image_file": "HappyVishu.png",
-      "image_data_version": "1",
+      "image_data_version": "2",
       "animated_sticker_pack": true,
       "stickers": [
         {
@@ -672,6 +672,41 @@
         },
         {
           "image_file": "v-06.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v-07.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v-08.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v-09.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v-10.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v-11.webp",
           "emojis": [
             "💻",
             "🌃"
@@ -717,6 +752,20 @@
         },
         {
           "image_file": "e-05.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "e-06.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "e-07.webp",
           "emojis": [
             "💻",
             "🌃"
@@ -774,7 +823,7 @@
       "name": "HanumanJayanti",
       "publisher": "GreenGold",
       "tray_image_file": "Hanuman.png",
-      "image_data_version": "1",
+      "image_data_version": "2",
       "animated_sticker_pack": true,
       "stickers": [
         {
@@ -811,6 +860,20 @@
             "💻",
             "🌃"
           ]
+        },
+        {
+          "image_file": "h-06.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "h-07.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
         }
       ]
     },
@@ -819,7 +882,7 @@
       "name": "Ram Navami",
       "publisher": "GreenGold",
       "tray_image_file": "RamNavami.png",
-      "image_data_version": "2",
+      "image_data_version": "4",
       "animated_sticker_pack": true,
       "stickers": [
         {
@@ -2431,7 +2494,7 @@
       "name": "HappyBirthday",
       "publisher": "GreenGold",
       "tray_image_file": "happybirthday.png",
-      "image_data_version": "1",
+      "image_data_version": "3",
       "animated_sticker_pack": true,
       "stickers": [
         {
@@ -2534,6 +2597,34 @@
         },
         {
           "image_file": "hb_15.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "hb_16.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "hb_17.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "hb_18.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "hb_19.webp",
           "emojis": [
             "💻",
             "🌃"
