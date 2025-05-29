@@ -1,15 +1,14 @@
-/*
- * Copyright (c) WhatsApp Inc. and its affiliates.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 package com.example.samplestickerapp;
 
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowCompat;
+import androidx.core.view.WindowInsetsCompat;
+import androidx.core.view.WindowInsetsControllerCompat;
 
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -19,7 +18,6 @@ import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 
 public class StickerPackListActivity extends AddStickerPackActivity {
     public static final String EXTRA_STICKER_PACK_LIST_DATA = "sticker_pack_list";
@@ -33,14 +31,36 @@ public class StickerPackListActivity extends AddStickerPackActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Tell the system to allow drawing behind system bars
+        WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         setContentView(R.layout.activity_sticker_pack_list);
+
+        // Apply padding for system bars
+        View rootLayout = findViewById(R.id.root_layout);
+        if (rootLayout != null) {
+            ViewCompat.setOnApplyWindowInsetsListener(rootLayout, (v, insets) -> {
+                Insets systemBarsInsets = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+                v.setPadding(
+                        systemBarsInsets.left,
+                        systemBarsInsets.top,
+                        systemBarsInsets.right,
+                        systemBarsInsets.bottom
+                );
+                return WindowInsetsCompat.CONSUMED;
+            });
+        }
+
+        // Optional: Set dark icons in status bar
+        WindowInsetsControllerCompat windowInsetsController =
+                WindowCompat.getInsetsController(getWindow(), getWindow().getDecorView());
+        windowInsetsController.setAppearanceLightStatusBars(true);
+
         packRecyclerView = findViewById(R.id.sticker_pack_list);
         stickerPackList = getIntent().getParcelableArrayListExtra(EXTRA_STICKER_PACK_LIST_DATA);
         showStickerPackList(stickerPackList);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(getResources().getQuantityString(R.plurals.title_activity_sticker_packs_list, stickerPackList.size()));
-        }
 
+        // Removed ActionBar code due to NoActionBar theme
     }
 
     @Override
@@ -72,14 +92,14 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         packRecyclerView.getViewTreeObserver().addOnGlobalLayoutListener(this::recalculateColumnCount);
     }
 
-
-    private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener = pack -> addStickerPackToWhatsApp(pack.identifier, pack.name);
-
+    private final StickerPackListAdapter.OnAddButtonClickedListener onAddButtonClickedListener =
+            pack -> addStickerPackToWhatsApp(pack.identifier, pack.name);
 
     private void recalculateColumnCount() {
         final int previewSize = getResources().getDimensionPixelSize(R.dimen.sticker_pack_list_item_preview_image_size);
         int firstVisibleItemPosition = packLayoutManager.findFirstVisibleItemPosition();
-        StickerPackListItemViewHolder viewHolder = (StickerPackListItemViewHolder) packRecyclerView.findViewHolderForAdapterPosition(firstVisibleItemPosition);
+        StickerPackListItemViewHolder viewHolder =
+                (StickerPackListItemViewHolder) packRecyclerView.findViewHolderForAdapterPosition(firstVisibleItemPosition);
         if (viewHolder != null) {
             final int widthOfImageRow = viewHolder.imageRowView.getMeasuredWidth();
             final int max = Math.max(widthOfImageRow / previewSize, 1);
@@ -89,7 +109,6 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         }
     }
 
-
     static class WhiteListCheckAsyncTask extends AsyncTask<StickerPack, Void, List<StickerPack>> {
         private final WeakReference<StickerPackListActivity> stickerPackListActivityWeakReference;
 
@@ -98,23 +117,21 @@ public class StickerPackListActivity extends AddStickerPackActivity {
         }
 
         @Override
-        protected final List<StickerPack> doInBackground(StickerPack... stickerPackArray) {
-            final StickerPackListActivity stickerPackListActivity = stickerPackListActivityWeakReference.get();
-            if (stickerPackListActivity == null) {
-                return Arrays.asList(stickerPackArray);
-            }
+        protected List<StickerPack> doInBackground(StickerPack... stickerPackArray) {
+            final StickerPackListActivity activity = stickerPackListActivityWeakReference.get();
+            if (activity == null) return Arrays.asList(stickerPackArray);
             for (StickerPack stickerPack : stickerPackArray) {
-                stickerPack.setIsWhitelisted(WhitelistCheck.isWhitelisted(stickerPackListActivity, stickerPack.identifier));
+                stickerPack.setIsWhitelisted(WhitelistCheck.isWhitelisted(activity, stickerPack.identifier));
             }
             return Arrays.asList(stickerPackArray);
         }
 
         @Override
         protected void onPostExecute(List<StickerPack> stickerPackList) {
-            final StickerPackListActivity stickerPackListActivity = stickerPackListActivityWeakReference.get();
-            if (stickerPackListActivity != null) {
-                stickerPackListActivity.allStickerPacksListAdapter.setStickerPackList(stickerPackList);
-                stickerPackListActivity.allStickerPacksListAdapter.notifyDataSetChanged();
+            final StickerPackListActivity activity = stickerPackListActivityWeakReference.get();
+            if (activity != null) {
+                activity.allStickerPacksListAdapter.setStickerPackList(stickerPackList);
+                activity.allStickerPacksListAdapter.notifyDataSetChanged();
             }
         }
     }

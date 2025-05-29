@@ -22,8 +22,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 
-import java.util.Objects;
-
 public abstract class AddStickerPackActivity extends BaseActivity {
     private static final int ADD_PACK = 200;
     private static final String TAG = "AddStickerPackActivity";
@@ -109,7 +107,7 @@ public abstract class AddStickerPackActivity extends BaseActivity {
         @NonNull
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {
-            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(requireActivity())
+            AlertDialog.Builder dialogBuilder = new AlertDialog.Builder(getActivity())
                     .setMessage(R.string.add_pack_fail_prompt_update_whatsapp)
                     .setCancelable(true)
                     .setPositiveButton(android.R.string.ok, (dialog, which) -> dismiss())

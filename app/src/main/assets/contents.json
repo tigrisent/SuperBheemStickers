@@ -3,6 +3,36 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "57",
+      "name": "Yoga",
+      "publisher": "GreenGold",
+      "tray_image_file": "Yoga.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "yoga_01.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "yoga_02.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "yoga_03.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        }]
+    },
+    {
       "identifier": "56",
       "name": "Halloween",
       "publisher": "GreenGold",
@@ -582,6 +612,41 @@
         },
         {
           "image_file": "md-11.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "md-12.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "md-13.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "md-14.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "md-15.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "md-16.webp",
           "emojis": [
             "💻",
             "🌃"
