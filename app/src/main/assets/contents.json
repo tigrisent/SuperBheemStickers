@@ -3,6 +3,36 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "58",
+      "name": "Guru Purnima",
+      "publisher": "GreenGold",
+      "tray_image_file": "Guru.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "g_01.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "g_02.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "g_03.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        }]
+    },
+    {
       "identifier": "57",
       "name": "Yoga",
       "publisher": "GreenGold",
