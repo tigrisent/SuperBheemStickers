@@ -3,6 +3,36 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "59",
+      "name": "Kargil Diwas",
+      "publisher": "GreenGold",
+      "tray_image_file": "KargilDiwas.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "c_01.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "c_02.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "c_03.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        }]
+    },
+    {
       "identifier": "58",
       "name": "Guru Purnima",
       "publisher": "GreenGold",
@@ -2058,6 +2088,27 @@
         },
         {
           "image_file": "c25.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "c26.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "c27.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "c28.webp",
           "emojis": [
             "💻",
             "🌃"
