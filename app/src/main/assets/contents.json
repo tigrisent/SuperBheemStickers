@@ -3,6 +3,50 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "60",
+      "name": "Super Villains",
+      "publisher": "GreenGold",
+      "tray_image_file": "SuperVillains.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "v_1.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v_2.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v_3.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v_4.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "v_5.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        }]
+    },
+    {
       "identifier": "59",
       "name": "Kargil Diwas",
       "publisher": "GreenGold",
