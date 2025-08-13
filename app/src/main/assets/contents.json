@@ -3,6 +3,37 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "61",
+      "name": "Janmashtami",
+      "publisher": "GreenGold",
+      "tray_image_file": "Janmashtami.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "j_1.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "j_2.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "j_3.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "60",
       "name": "Super Villains",
       "publisher": "GreenGold",
@@ -3444,6 +3475,41 @@
         },
         {
           "image_file": "Ind-11.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "Ind-12.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "Ind-13.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "Ind-14.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "Ind-15.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "Ind-16.webp",
           "emojis": [
             "📱",
             "😦"
