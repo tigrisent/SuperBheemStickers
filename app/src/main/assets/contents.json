@@ -3,6 +3,86 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+    "identifier": "29",
+    "name": "Ganesh Chaturthi Anim",
+    "publisher": "GreenGold",
+    "tray_image_file": "thumbnail.png",
+    "image_data_version": "1",
+    "animated_sticker_pack": true,
+    "stickers": [
+      {
+        "image_file": "gh-01.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-02.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-03.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-04.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-05.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-06.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-07.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-08.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-09.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      },
+      {
+        "image_file": "gh-10.webp",
+        "emojis": [
+          "💻",
+          "🌃"
+        ]
+      }
+    ]
+  },
+    {
       "identifier": "61",
       "name": "Janmashtami",
       "publisher": "GreenGold",
@@ -2216,65 +2296,6 @@
         },
         {
           "image_file": "d3.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "29",
-      "name": "Ganesh Chaturthi Anim",
-      "publisher": "GreenGold",
-      "tray_image_file": "thumbnail.png",
-      "image_data_version": "1",
-      "animated_sticker_pack": true,
-      "stickers": [
-        {
-          "image_file": "gh-01.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "gh-02.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "gh-03.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "gh-04.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "gh-05.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "gh-06.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "gh-07.webp",
           "emojis": [
             "💻",
             "🌃"
