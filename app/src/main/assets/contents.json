@@ -3,6 +3,177 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "15",
+      "name": "Dussehra",
+      "publisher": "GreenGold",
+      "tray_image_file": "dussehra.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "d1.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d2.webp",
+          "emojis": [
+            "🎉",
+            "✨"
+          ]
+        },
+        {
+          "image_file": "d3.webp",
+          "emojis": [
+            "🤮",
+            "👎"
+          ]
+        },
+        {
+          "image_file": "d4.webp",
+          "emojis": [
+            "🖐",
+            "🙋"
+          ]
+        },
+        {
+          "image_file": "d5.webp",
+          "emojis": [
+            "🖐",
+            "👋"
+          ]
+        },
+        {
+          "image_file": "d6.webp",
+          "emojis": [
+            "🍵",
+            "😌"
+          ]
+        },
+        {
+          "image_file": "d7.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d8.webp",
+          "emojis": [
+            "🍵",
+            "😌"
+          ]
+        },
+        {
+          "image_file": "d9.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d10.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d11.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "d12.webp",
+          "emojis": [
+            "🎉",
+            "✨"
+          ]
+        },
+        {
+          "image_file": "d13.webp",
+          "emojis": [
+            "🤮",
+            "👎"
+          ]
+        },
+        {
+          "image_file": "d14.webp",
+          "emojis": [
+            "🖐",
+            "🙋"
+          ]
+        },
+        {
+          "image_file": "d15.webp",
+          "emojis": [
+            "🖐",
+            "👋"
+          ]
+        },
+        {
+          "image_file": "d16.webp",
+          "emojis": [
+            "🍵",
+            "😌"
+          ]
+        },
+        {
+          "image_file": "d17.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d18.webp",
+          "emojis": [
+            "🍵",
+            "😌"
+          ]
+        },
+        {
+          "image_file": "d19.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d20.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d21.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d22.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        },
+        {
+          "image_file": "d23.webp",
+          "emojis": [
+            "📱",
+            "😦"
+          ]
+        }
+      ]
+    },
+    {
     "identifier": "29",
     "name": "Ganesh Chaturthi Anim",
     "publisher": "GreenGold",
@@ -3167,156 +3338,6 @@
           "emojis": [
             "🖐",
             "🙋"
-          ]
-        }
-      ]
-    },
-    {
-      "identifier": "15",
-      "name": "Dussehra",
-      "publisher": "GreenGold",
-      "tray_image_file": "dussehra.png",
-      "image_data_version": "1",
-      "animated_sticker_pack": true,
-      "stickers": [
-        {
-          "image_file": "d1.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "d2.webp",
-          "emojis": [
-            "🎉",
-            "✨"
-          ]
-        },
-        {
-          "image_file": "d3.webp",
-          "emojis": [
-            "🤮",
-            "👎"
-          ]
-        },
-        {
-          "image_file": "d4.webp",
-          "emojis": [
-            "🖐",
-            "🙋"
-          ]
-        },
-        {
-          "image_file": "d5.webp",
-          "emojis": [
-            "🖐",
-            "👋"
-          ]
-        },
-        {
-          "image_file": "d6.webp",
-          "emojis": [
-            "🍵",
-            "😌"
-          ]
-        },
-        {
-          "image_file": "d7.webp",
-          "emojis": [
-            "📱",
-            "😦"
-          ]
-        },
-        {
-          "image_file": "d8.webp",
-          "emojis": [
-            "🍵",
-            "😌"
-          ]
-        },
-        {
-          "image_file": "d9.webp",
-          "emojis": [
-            "📱",
-            "😦"
-          ]
-        },
-        {
-          "image_file": "d10.webp",
-          "emojis": [
-            "📱",
-            "😦"
-          ]
-        },
-        {
-          "image_file": "d11.webp",
-          "emojis": [
-            "💻",
-            "🌃"
-          ]
-        },
-        {
-          "image_file": "d12.webp",
-          "emojis": [
-            "🎉",
-            "✨"
-          ]
-        },
-        {
-          "image_file": "d13.webp",
-          "emojis": [
-            "🤮",
-            "👎"
-          ]
-        },
-        {
-          "image_file": "d14.webp",
-          "emojis": [
-            "🖐",
-            "🙋"
-          ]
-        },
-        {
-          "image_file": "d15.webp",
-          "emojis": [
-            "🖐",
-            "👋"
-          ]
-        },
-        {
-          "image_file": "d16.webp",
-          "emojis": [
-            "🍵",
-            "😌"
-          ]
-        },
-        {
-          "image_file": "d17.webp",
-          "emojis": [
-            "📱",
-            "😦"
-          ]
-        },
-        {
-          "image_file": "d18.webp",
-          "emojis": [
-            "🍵",
-            "😌"
-          ]
-        },
-        {
-          "image_file": "d19.webp",
-          "emojis": [
-            "📱",
-            "😦"
-          ]
-        },
-        {
-          "image_file": "d20.webp",
-          "emojis": [
-            "📱",
-            "😦"
           ]
         }
       ]
