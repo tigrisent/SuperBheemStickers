@@ -3,6 +3,43 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "62",
+      "name": "children's day",
+      "publisher": "GreenGold",
+      "tray_image_file": "childresndayicon.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "ch1.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "ch2.webp",
+          "emojis": [
+            "🎉",
+            "✨"
+          ]
+        },
+        {
+          "image_file": "ch3.webp",
+          "emojis": [
+            "🤮",
+            "👎"
+          ]
+        },
+        {
+          "image_file": "ch4.webp",
+          "emojis": [
+            "🖐",
+            "🙋"
+          ]
+        }
+      ]
+    },{
       "identifier": "15",
       "name": "Dussehra",
       "publisher": "GreenGold",
