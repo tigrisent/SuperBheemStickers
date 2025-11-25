@@ -3,6 +3,37 @@
   "ios_app_store_link": "",
   "sticker_packs": [
     {
+      "identifier": "63",
+      "name": "Thanks Giving",
+      "publisher": "GreenGold",
+      "tray_image_file": "ThanksGiving.png",
+      "image_data_version": "1",
+      "animated_sticker_pack": true,
+      "stickers": [
+        {
+          "image_file": "t1.webp",
+          "emojis": [
+            "💻",
+            "🌃"
+          ]
+        },
+        {
+          "image_file": "t2.webp",
+          "emojis": [
+            "🎉",
+            "✨"
+          ]
+        },
+        {
+          "image_file": "t3.webp",
+          "emojis": [
+            "🤮",
+            "👎"
+          ]
+        }
+      ]
+    },
+    {
       "identifier": "62",
       "name": "children's day",
       "publisher": "GreenGold",
@@ -39,7 +70,8 @@
           ]
         }
       ]
-    },{
+    },
+    {
       "identifier": "15",
       "name": "Dussehra",
       "publisher": "GreenGold",
