@@ -4,14 +4,15 @@ plugins {
 
 android {
     namespace 'com.example.samplestickerapp'
-    compileSdk 35
+    compileSdk 36
 
     defaultConfig {
         applicationId "com.greengold.stickers.superbheemstickers"
         minSdk 21
-        targetSdk 35
-        versionCode 213
-        versionName "2.1.3"
+        //noinspection EditedTargetSdkVersion
+        targetSdk 36
+        versionCode 215
+        versionName "2.1.5"
 
         multiDexEnabled true // ADDED to fix 64K method limit error
 
@@ -107,11 +108,11 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.7.0'
     implementation 'androidx.recyclerview:recyclerview:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.1'
-    def frescoVersion = "2.6.0"
+    def frescoVersion = '3.6.0'
     implementation("com.facebook.fresco:fresco:$frescoVersion") {
         exclude group: 'com.facebook.soloader'
     }
-    implementation("com.facebook.soloader:soloader:0.10.5")
+    implementation('com.facebook.soloader:soloader:0.12.1')
     implementation "com.facebook.fresco:webpsupport:$frescoVersion"
     implementation "com.facebook.fresco:animated-webp:$frescoVersion"
     implementation "com.facebook.fresco:animated-base:$frescoVersion"
